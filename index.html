@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="public/styles/site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img class="logo-light" src="public/images/site-logo.svg" alt="Logo Image">
+            <img class="logo-dark hidden" src="public/images/logo-dark.svg" alt="Dark Logo Image">
+        </div>
+
+        <div class="toggle">
+            <img class="theme-toggle" id="light" src="/public/images/moon.png" alt="sun-image">
+            <img class="theme-toggle-sun hidden" id="dark" src="/public/images/sun-dark.svg" alt="sun-image">
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="tabs">
+            <!-- try using divs placed in flex -->
+            <button class="navTab" onclick="openTab(event, 'home')" id="defaultTab">home</button>
+            <button class="navTab" onclick="openTab(event, 'about')">about</button>
+            <button class="navTab" onclick="openTab(event, 'work')">work</button>
+        </div>
+
+        <!-- home div -->
+        <div id="home" class="tab-content">
+            <div class="card home-tab">
+                <h1 class="home">hello!</h1>
+                <div class="tab-mini">
+                    <p>I’m Tooni [tOH-knee],
+                        a front-end developer based in Houston,
+                        TX who seeks to craft engaging interactive experiences.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- about div -->
+        <div id="about" class="tab-content">
+            <div class="card about-tab">
+                <h2 class="about">more about me...</h2>
+                <div class="tab-mini">
+                    <p>I’m Tooni [tOH-knee],
+                        a front-end developer based in Houston,
+                        TX who seeks to craft engaging interactive experiences.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- work div -->
+        <div id="work" class="tab-content">
+            <div class="card">
+                <div class="overflow-hidden">
+                    <div class="scroll-div">
+                        <h2>featured works</h2>
+                        <div class="photo-card">
+                            <!-- <p class="tooltipText">psst...scroll to see more</p> -->
+                            <div class="photo-img">
+                                <img width="300" height="300" src="/public/images/photo-group2.svg"
+                                    alt="Prisoner Express App Photo">
+                            </div>
+                            <div class="card-info">
+                                <span>Prisoner's Express App</span>
+                                <div class="photo-bubble">
+                                    <div>HTML/CSS</div>
+                                    <div>Vue.js</div>
+                                    <div>Bootstrap</div>
+                                </div>
+                                <p class="info-text">An informative and educative platform for incarcerated individuals
+                                    which also provides a platform for creative self-expression.</p>
+                            </div>
+                        </div>
+
+                        <div class="photo-card">
+                            <div class="photo-img">
+                                <img class="object-fit" width="500" height="500" src="/public/images/photo-group.svg"
+                                    alt="Pinterest App Photo">
+                            </div>
+                            <div class="card-info">
+                                <span>Stack It!</span>
+                                <div class="photo-bubble">
+                                    <div>User Research</div>
+                                    <div>Prototyping</div>
+                                </div>
+                                <p class="info-text">An independent UX case study exploring organizational avenues in
+                                    Pinterest.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Want to chat more? Reach out here!</p>
+        <div>
+            <p>© 2025 Jesutooni Oguntula</p>
+            <p>...built with heart (づ ᴗ _ᴗ)づ ♡</p>
+        </div>
+    </footer>
+
+    <script src="public/scripts.js"></script>
+</body>
+
+</html>
