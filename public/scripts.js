@@ -76,3 +76,21 @@ for (let i = 0; i < cards.length; i++) {
 //         tooltip.style.display = 'none';
 //     });
 // });
+
+function copyFunction() {
+    const copiedText = document.querySelector("#contactText").textContent;
+    console.log(copiedText);
+
+    navigator.clipboard.writeText(copiedText);
+
+    const alert = document.querySelector(".pos-absolute");
+
+    if (alert.classList.contains('pos-absolute')) {
+        // console.log("yes!")
+        alert.style.display = "block";
+        setTimeout(function () {
+            alert.style.display = 'none';
+        }, 5000);
+    }
+    // alert("Email copied! ^-^")
+}
